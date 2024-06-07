@@ -1,0 +1,14 @@
+get user to enter positive number
+keep asking until they enter zero
+output largest of the numbers input
+
+get user to enter their name
+store name as variable called first_name 
+print out first_name along with "Hello World"
+
+read random numbers
+return arithmetic average
+
+read grocery list
+find products left to buy
+print out products in alphabetical order
