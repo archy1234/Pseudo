@@ -1,20 +1,20 @@
 # Did some extra research, just to get a little help to make it flawless.
 # https://www.studocu.com/en-za/messages/question/2756297/create-a-simple-calculator-application-that-asks-a-user-to-enter-two-numbers-and-the-operation
 
-#function to addition two numbers
+# Function to addition two numbers.
 def addition(x, y):
     return x + y
 
-#function to subtraction two numbers
+# Function to subtraction two numbers.
 def subtraction(x, y):
     return x - y
 
-#function to multiplication two numbers
+# Function to multiplication two numbers.
 def multiplication(x, y):
     return x * y
 
-#function to division two numbers
-#this prints message if the number is division by zero
+# Function to division two numbers.
+# This prints message if the number is division by zero.
 def division(x, y):
     try:
         return x / y
@@ -26,14 +26,14 @@ file = open("equations.txt", "a")
 
 while True:
 
-    #read numbers and operator
+    # Read numbers and operator.
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     operator = input("Enter operator: ")
     
     file.write(str(num1)+" "+operator+" "+str(num2)+"\n")
     
-    #if else statement to print the answer for the given operator
+    # If else statement to print the answer for the given operator.
     if operator in ('+', '-', '*', '/'):
         if operator == '+':
             print(addition(num1, num2), "\n")
@@ -57,7 +57,7 @@ while True:
             file.close()
 
         else:
-                    #chose whether to continue or not
+                    # Choose whether to continue or not.
                     choice = input("Continue - Y / No - N: ")
 
         if choice == "N":
@@ -65,5 +65,5 @@ while True:
     else:
         print("Invalid Input\n")
 
-#close the file
+# Close the file.
 file.close()
