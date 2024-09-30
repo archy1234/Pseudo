@@ -21,7 +21,7 @@ def division(x, y):
     except ZeroDivisionError:
         return "Division by zero\n"
 
-#create a file in write mode
+# Create a file in write mode.
 file = open("equations.txt", "a")
 
 while True:
